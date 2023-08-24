@@ -4,6 +4,7 @@ import { useState, useRef, Fragment } from 'react'
 import type { StaticImageData } from 'next/image'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
+import thumbPic from '@/public/images/hero-image-01.jpg'
 
 interface ModalVideoProps {
   thumb: StaticImageData
@@ -33,7 +34,7 @@ export default function ModalVideo({
       {/* Video thumbnail */}
       <div>
         <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
-          <Image src={thumb} width={thumbWidth} height={thumbHeight} alt={thumbAlt} />
+          <Image src={thumbPic} width={thumbWidth} height={thumbHeight} alt={thumbAlt} />
           <button className="absolute group" onClick={() => { setModalOpen(true) }} aria-label="Watch the video">
             <svg className="w-16 h-16 sm:w-20 sm:h-20 hover:opacity-75 transition duration-150 ease-in-out" viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
               <defs>
