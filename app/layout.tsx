@@ -19,8 +19,8 @@ const architects_daughter = Architects_Daughter({
 })
 
 export const metadata = {
-  title: 'Project 556',
-  description: 'the main landing page of Project 556',
+  title: 'Project 5-56',
+  description: 'Lubrication for illiquid DEXes.',
 }
 
 export default function RootLayout({
