@@ -21,6 +21,12 @@ const architects_daughter = Architects_Daughter({
 export const metadata = {
   title: 'Project 5-56',
   description: 'Lubrication for illiquid DEXes.',
+  keywords: ['Blockchain', 'DeFi', 'smart contract'],
+  authors: [{ name: 'Zkitty', url: 'https://zkitty.me' }],
+  metadataBase: new URL('https://5-56.app'),
+  openGraph: {
+    images: '/images/hero-image-01.jpg',
+  },
 }
 
 export default function RootLayout({
